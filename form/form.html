@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- Create A Form Widgets -->
+    <form action="action_page.php" method="POST">                         <!-- GET or POST -->
+        <!-- Text Input Area -->
+        <div>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Please enter your first name" required>
+        </div>  
+        <br>
+        <div>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Please enter your last name" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Please enter your password"  maxlength="12" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Please enter your last E-mail" required>
+        </div>
+        <br>
+
+        <!-- date input area -->
+        <div>
+            <label for="date">Birthday:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <br>
+
+        <!-- Number input area -->
+        <div>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="0" max="99" value="1" required>
+        </div>
+        <br>
+
+        <!-- Radio button area-->
+        <div>
+            <label for="Male">Male</label>
+            <input type="radio" id="Male" value="Male" name="choice" >
+            <label for="Female">Female</label>
+            <input type="radio" id="Female" value="Female" name="choice" >
+            <label for="PhD">PhD</label>
+            <input type="radio" id="PhD" value="PhD" name="choice" >
+        </div>
+        <br>
+
+        <!-- Select box area -->
+        <div>
+            <label for="payment">Payment</label>
+            <select id="payment" name="payment">
+                <option>visa</option>
+                <option>master card</option>
+                <option>gift card</option>
+            </select>
+        </div>
+        <br>
+
+        <!-- Check box area -->
+        <div>
+            <label for="subscribe">Subscribe</label>
+            <input type="checkbox" id="subscribe" name="subscribe">
+        </div>
+        <br>
+
+        <!-- Input button area -->
+        <div>   
+            <input type="submit">
+            <input type="reset">
+        </div>
+    </form>
+</body>
+</html>
